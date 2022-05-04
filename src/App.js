@@ -58,7 +58,7 @@ function App() {
           <div className="programs-god-container">
             {loading ? (
               <>
-                <img src={Rocket} style={{ width: "100%" }} />
+                <img src={Rocket} alt='Loading' style={{ width: "100%" }} />
               </>
             ) : (
               <>
