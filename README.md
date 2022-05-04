@@ -7,5 +7,10 @@ A simple app to fetch SpaceX Programs list based on Year, Launch & Land Success 
 - Axios
 
 ## Description
-The app basically starts off with the main page, where list of all programs are fetched form the api and displayed in a grid.
+The app basically starts off with the main page, where list of all programs are fetched from the api and displayed in a grid.
 Later, when the user selects a filter option, its' respective api is called again, and the program grid is re-rendered accordingly.
+
+- Did not use any styling framewworks. Plain CSS only.
+
+### URL
+- https://spacex-programs-list.netlify.app/

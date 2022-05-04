@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 import Filters from "./components/Filters";
-import Rocket from "./rocket-loader.gif";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -57,9 +56,7 @@ function App() {
           />
           <div className="programs-god-container">
             {loading ? (
-              <>
-                <img src={Rocket} alt='Loading' style={{ width: "100%" }} />
-              </>
+              "Loading"
             ) : (
               <>
                 {data?.map((val) => (
