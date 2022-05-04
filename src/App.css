@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -20,15 +20,15 @@
 }
 .container{
     height: 100%;
-    display: flex;
-    /* gap: 20px; same as padding-right of god container */
+    display: block;
 }
 .filters-god-container{
     background-color: white;
-    width: 14.5%;
+    width: 80%;
     height: fit-content;
     padding: 8px 8px 20px 8px;
     border-radius: 5px;
+    margin: 26px auto;
 }
 
 .filter-heading{
@@ -36,7 +36,7 @@
 }
 
 .filter-sub-container{
-    padding: 0 20px;
+    padding: 0;
 }
 
 .filter-sub-heading{
@@ -71,20 +71,21 @@
 }
 
 .programs-god-container{
-    width: 85.5%;
-    display: flex;
+    width: 80%;
     flex-wrap: wrap;
     justify-content: flex-start;
+    display: block;
+    margin: 26px auto;
 }
 
 .program-card{
-    width: 25%;
     height: fit-content;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     margin: 0px 0px 15px 0px;
-    padding-left: 15px; 
+    width: 100%;
+    padding-left: 0px;
 }
 
 .program{
@@ -139,11 +140,36 @@
     font-size: 0.9rem;
 }
 
-/* Tablet view */
 
-@media (min-width:700px) and (max-width:1024px) {
+@media (min-width:500px) {
+    .filters-god-container{
+        width: 60%;
+    }
+    .programs-god-container{
+        width: 60%;
+    }
+}
+
+
+@media (min-width:700px){
+
+    .container{
+        display: flex;
+    }
+
+    .filters-god-container{
+        width: 14.5%;
+        margin: unset;
+    }
+
+    .programs-god-container{
+        width: 85.5%;
+        display: flex;
+        margin: unset;
+    }
     .program-card{
         width: 50%;
+        padding-left: 15px;
     }
     .filter-sub-container{
         padding: 0 10px;
@@ -151,48 +177,19 @@
     
 }
 
-@media (max-width:800px){
+ @media (max-width:800px){
     .filter-sub-container{
         padding: 0;
     }
 
-}
+} 
 
+@media (min-width:1024px){
 
-@media (max-width:700px) {
-    .container{
-        display: block;
-    }
-    .filters-god-container{
-        width: 40%;
-        margin: 26px auto;
-    }
-    .programs-god-container{
-        display: block;
-        width: 40%;
-        margin: 26px auto;
+    .filters-sub-container{
+        padding: 0 20px;
     }
     .program-card{
-        width: 100%;
-        padding-left: 0px;
-    }
-}
-
-
-@media (max-width:500px) {
-    .filters-god-container{
-        width: 60%;
-    }
-    .programs-god-container{
-        width: 60%;
-    }
-}
-
-@media (max-width:320px) {
-    .filters-god-container{
-        width: 80%;
-    }
-    .programs-god-container{
-        width: 80%;
+        width: 25%;
     }
 }
