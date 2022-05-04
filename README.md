@@ -1,5 +1,5 @@
 # SpaceX-Launch-List
-A simple app to fetch SpaceX Programs list based on Year, Launch & Land Success filter.
+A front-end application which helps user list and browse all launches by SpaceX program
 
 ## Technologies
 - React JS
@@ -7,12 +7,12 @@ A simple app to fetch SpaceX Programs list based on Year, Launch & Land Success 
 - Axios
 
 ## Description
-The app basically starts off with the main page, where list of all programs are fetched from the api and displayed in a grid.
-Later, when the user selects a filter option, its' respective api is called again, and the program grid is re-rendered accordingly.
+The app basically starts off with the landing page, where list of all programs are fetched from the api, hence server-side-rendered and displayed in a responsive grid.
+User can Filter the results with the help of provided Filters, and when they do, its respective api is called again, and the grid is re-rendered accordingly.
 
 - Did not use any styling frameworks. 
 - Fully responsive using CSS only.
-- Implemented Mobile First design approach, startingwith 300px screen size styles.
+- Implemented Mobile First design approach, starting with 300px screen size styles.
 
 ### Breakpoints
 - 500px 
